@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+}
+
+html {
+  background-color: rgb(202, 196, 188);
+}
+
+body {
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+nav {
+  height: 50px;
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  margin-top: 40px;
+}
+
+.btn-cont {
+  font-size: 52px;
+  height: 150px;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.btn-hand, .btn-play {
+  font-size: 52px;
+  border: none;
+  border-radius: 15px;
+  transition: all ease 0.15s;
+}
+
+.btn-play {
+  font-size: 32px;
+  padding: 15px 25px;
+}
+
+.btn-hand:hover, .btn-play:hover {
+  cursor: pointer;
+  background-color: antiquewhite;
+  font-size: 56px;
+  box-shadow: 0 0 15px rgb(166, 166, 166);
+  border: 2px solid rgb(230, 230, 230);
+}
+
+.btn-play:hover {
+  font-size: 36px;
+}
+
+.btn-hand:active, .btn-play:active {
+  background-color: darkkhaki;
+}
+
+.active:hover {
+  background-color: darkkhaki;
+}
+
+p {
+  margin-top: 40px;
+  font-size: 52px;
+}
+
+/* UTILITY JS */
+.active {
+  background-color: darkkhaki;
+}
+
+.win {
+  background-color: rgb(178, 218, 151);
+}
+.lose {
+  background-color: rgb(255, 129, 129);
+}
+
+.hidden {
+  visibility: hidden;
+}
